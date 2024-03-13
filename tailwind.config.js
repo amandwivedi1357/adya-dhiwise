@@ -1,0 +1,57 @@
+module.exports = {
+  mode: "jit",
+  content: ["./src/**/**/*.{js,ts,jsx,tsx,html,mdx}", "./src/**/*.{js,ts,jsx,tsx,html,mdx}"],
+  darkMode: "class",
+  theme: {
+    screens: { md: { max: "1050px" }, sm: { max: "550px" } },
+    extend: {
+      colors: {
+        black: {
+          900: "#030303",
+          "900_e5": "#030303e5",
+          "900_cc": "#030303cc",
+          "900_e5_03": "#030303e5",
+          "900_04": "#030303",
+        },
+        cyan: { 900: "#024c70", "900_03": "#024c70" },
+        white: {
+          A700: "#ffffff",
+          A700_bc: "#ffffffbc",
+          A700_03: "#ffffff",
+          A700_e5_03: "#ffffffe5",
+          A700_d3: "#ffffffd3",
+          A700_e5: "#ffffffe5",
+        },
+        gray: {
+          600: "#808080",
+          "600_01": "#808285",
+          "500_77": "#93959877",
+          "700_93": "#5a585893",
+          "700_7f": "#5a58587f",
+          "700_93_02": "#5a545493",
+          "700_93_01": "#5a535393",
+          "700_7c": "#5a58587c",
+          "500_77_03": "#93959877",
+        },
+        deep_orange: {
+          700: "#e85123",
+          "700_06": "#e85123",
+          "700_b2_03": "#e85123b2",
+          "700_07": "#e85122",
+          "700_01": "#e85122",
+        },
+        green: { 700: "#31b303" },
+        blue_gray: { "800_3a": "#3c4a583a" },
+        red_900_e5: "#c31414e5",
+        red_A700: "#cd1010",
+      },
+      boxShadow: {
+        xs: "0px 2px  2px 0px #0000001e",
+        sm: "0px 2px  2px 0px #0000000f",
+        md: "0px 2px  2px 0px #0000000f",
+      },
+      fontFamily: { inter: "Inter", poppins: "Poppins", nunito: "Nunito", rambla: "Rambla" },
+    },
+  },
+  plugins: [require("@tailwindcss/forms")],
+};
